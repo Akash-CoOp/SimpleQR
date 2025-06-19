@@ -130,6 +130,7 @@ fun QrgeneratorScreen(){
             onClick = {
                 val integrator = IntentIntegrator(context as Activity)
                 integrator.setPrompt("Scan a QR Code")
+                integrator.setOrientationLocked(true)
                 integrator.initiateScan()
             },
             modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp)
